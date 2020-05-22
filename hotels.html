@@ -17,9 +17,50 @@
       </nav>
     </footer>
     <main>
-      <h1>Поиск отеля</h1>
+      <h1 class="visually-hidden">Поиск отеля</h1>
       <section>
-        <!-- Здесь будет форма для фильтра поиска отелей -->
+        <form action="http://echo.htmlacademy.ru/" method="post">
+          <fieldset>
+            <legend>Инфраструктура:</legend>
+            <ul>
+              <li>
+               <input type="checkbox" name="sweembox" value="sweembow" id="check-sweem">
+               <label for="check-sweem">Бассейн</label>
+              </li>
+              <li>
+                <input type="checkbox" name="parking" value="check-parking" id="check-parking">
+                <label for="check-parking">Парковка</label>
+              </li>
+              <li>
+                <input type="checkbox" name="wifi" value="check-wifi">
+                <label for="check-wifi">wi-fi</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend>Тип жилья:</legend>
+            <ul>
+              <li>
+                <input type="checkbox" id="check-hotel" name="hotel">
+                <label for="check-hotel">Гостиница</label>
+              </li>
+              <li>
+                <input type="checkbox" id="check-mot" name="motel">
+                <label for="check-mot">Мотель</label>
+              </li>
+              <li>
+                <input type="checkbox" id="check-appart" name="appart">
+                <label for="check-appart">Апартаменты</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend>Стоимость в сутки (р):</legend>
+            <p>от 0</p>
+            <p>до 3000</p>
+          </fieldset>
+          <button type="submit" name="button">Показать</button>
+        </form>
       </section>
       <section>
         <h2>Результаты поиска отелей</h2>
