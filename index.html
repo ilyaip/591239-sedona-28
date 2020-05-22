@@ -88,15 +88,19 @@
         <form action="http://echo.htmlacademy.ru/" method="post">
           <legend>Поиск гостиницы в Седоне</legend>
           <label for="date-check-in">Дата заезда</label>
-          <input type="text" id="date-check-in" name="date" placeholder="77 июля 7777">
+          <input type="text" id="date-check-in" name="date" placeholder="24 апреля 2017">
+          <button type="button" aria-label="Выбрать дату заезда"></button>
           <label for="date-check-out">Дата выезда</label>
-          <div></div>
-          <input type="text" id="date-check-out" name="date" placeholder="88 августа 8888">
+          <input type="text" id="date-check-out" name="date" placeholder="4 июля 2017">
+          <button type="button" aria-label="Выбрать дату выезда"></button>
           <label for="check-parents">Взрослые</label>
-          <div></div>
-          <input type="number" max="6" min="1" name="parents" value="1" id="chek-parents">
+          <button type="button" aria-label="Меньше"></button>
+          <input type="text" name="parents" placeholder="2" id="chek-parents">
+          <button type="button" aria-label="Больше"></button>
           <label for="check-child">Дети</label>
-          <input type="number" min="1" max="1" name="child" value="1" id="check-child">
+          <button type="button" aria-label="Меньше"></button>
+          <input type="text" name="child" placeholder="0" id="check-child">
+          <button type="button" aria-label="Больше"></button>
           <button type="submit">Найти</button>
         </form>
       </section>
