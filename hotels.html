@@ -28,11 +28,11 @@
                <label for="check-sweem">Бассейн</label>
               </li>
               <li>
-                <input type="checkbox" name="parking" value="check-parking" id="check-parking">
+                <input type="checkbox" name="parking" value="parking" id="check-parking">
                 <label for="check-parking">Парковка</label>
               </li>
               <li>
-                <input type="checkbox" name="wifi" value="check-wifi">
+                <input type="checkbox" name="wifi" value="wifi" id="check-wifi">
                 <label for="check-wifi">wi-fi</label>
               </li>
             </ul>
@@ -41,15 +41,15 @@
             <legend>Тип жилья:</legend>
             <ul>
               <li>
-                <input type="checkbox" id="check-hotel" name="hotel">
+                <input type="checkbox" id="check-hotel" name="hotel" value="hotel">
                 <label for="check-hotel">Гостиница</label>
               </li>
               <li>
-                <input type="checkbox" id="check-mot" name="motel">
+                <input type="checkbox" id="check-mot" name="motel" value="motel">
                 <label for="check-mot">Мотель</label>
               </li>
               <li>
-                <input type="checkbox" id="check-appart" name="appart">
+                <input type="checkbox" id="check-appart" name="appart" value="appart">
                 <label for="check-appart">Апартаменты</label>
               </li>
             </ul>
@@ -59,18 +59,20 @@
             <p>от 0</p>
             <p>до 3000</p>
           </fieldset>
-          <button type="submit" name="button">Показать</button>
+          <button type="submit">Показать</button>
+        </form>
+      </section>
+      <section>
+        <h2 class="visually-hidden">Результаты поиска отелей</h2>
+        <div>
           <p>Найдено: 3</p>
-          <p>сортировка:</p>
+          <p>Сортировка:</p>
           <ul>
             <li><a href="">По цене</a></li>
             <li><a href="">По типу</a></li>
             <li><a href="">По рейтингу</a></li>
           </ul>
-        </form>
-      </section>
-      <section>
-        <h2>Результаты поиска отелей</h2>
+        </div>
         <ul>
           <li>
             <img src="img/amara.jpg" alt="Фото гостиницы" width="135" height="90">
@@ -103,14 +105,14 @@
     </main>
     <footer>
       <section>
-        <h2 hidden>Как с нами связаться?</h2>
+        <h2 class="visually-hidden">Как с нами связаться?</h2>
         <p>
           #visitsedona <br>
           <a href="tel:84956660166">+7 (495) 666-01-66</a>
         </p>
       </section>
       <section>
-        <h2 hidden>Давайте дружить!</h2>
+        <h2 class="visually-hidden">Давайте дружить!</h2>
         <ul>
           <li>
             <a href="#">twitter</a>
