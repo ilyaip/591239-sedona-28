@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
-    <link href="CSS/style.css" rel="stylesheet" />
+    <link href="CSS/style.css" rel="stylesheet">
   </head>
   <body>
     <header>
@@ -77,21 +77,23 @@
               <img src="img/famous2.jpg" alt="Преимущества Седоны" width="800" height="256">
             </div>
           </li>
-          <li>
-            <h3 class="feature-label">Небольшая площадь</h3>
-            <p>№3</p>
-            <p>Все достопримечательности находятся очень близко</p>
-          </li>
-          <li>
-            <h3 class="feature-label">Красивая дорога</h3>
-            <p>№4</p>
-            <p>Ехать в седону из лас-вегаса совсем не скучно!</p>
-          </li>
-          <li>
-            <h3 class="feature-label">Мало туристов</h3>
-            <p>№5</p>
-            <p>Большинство едет в гранд каньон и толпится там</p>
-          </li>
+          <div class="feature-column-2">
+            <li>
+              <h3 class="feature-label">Небольшая площадь</h3>
+              <p>№3</p>
+              <p>Все достопримечательности находятся очень близко</p>
+            </li>
+            <li>
+              <h3 class="feature-label">Красивая дорога</h3>
+              <p>№4</p>
+              <p>Ехать в седону из лас-вегаса совсем не скучно!</p>
+            </li>
+            <li>
+              <h3 class="feature-label">Мало туристов</h3>
+              <p>№5</p>
+              <p>Большинство едет в гранд каньон и толпится там</p>
+            </li>
+          </div>
         </ul>
       </section>
 
@@ -99,15 +101,15 @@
 
       <section>
         <h2 class="visually-hidden">Поиск гостиницы</h2>
-        <p>
+        <p class="form-question">
           Заитересовались?
         </p>
         <p>
           Укажите предпологаемые даты поездки,
           и мы покажем вам лучшее предложение гостиниц в седоне
         </p>
-        <form action="http://echo.htmlacademy.ru/" method="post">
-          <legend>Поиск гостиницы в Седоне</legend>
+        <button type="button" class="search-hotels">Поиск гостиницы в Седоне</button>
+        <form class="search-form" action="http://echo.htmlacademy.ru/" method="post">
           <label for="date-check-in">Дата заезда</label>
           <input type="text" id="date-check-in" name="date" placeholder="24 апреля 2017">
           <button type="button" aria-label="Выбрать дату заезда"></button>
@@ -122,14 +124,14 @@
           <button type="button" aria-label="Меньше">-</button>
           <input type="text" name="child" placeholder="0" id="check-child">
           <button type="button" aria-label="Больше">+</button>
-          <button type="submit">Найти</button>
+          <button class="search" type="submit">Найти</button>
         </form>
       </section>
     </main>
-    <footer>
+    <footer class="footer-column">
       <section>
         <h2 class="visually-hidden">Как с нами связаться?</h2>
-        <p>
+        <p class="footer-contacts">
           #visitsedona <br>
           <a href="tel:84956660166">+7 (495) 666-01-66</a>
         </p>
@@ -148,8 +150,10 @@
           </li>
         </ul>
       </section>
-      <p>Website by</p>
-      <a href="https://htmlacademy.ru"><img src="img/logo-htmlacademy.svg" alt="logo HTML academy" width="115" height="41"></a>
+      <div>
+        <p>Website by</p>
+        <a href="https://htmlacademy.ru"><img src="img/logo-htmlacademy.svg" alt="logo HTML academy" width="115" height="41"></a>
+      </div>
     </footer>
   </body>
 </html>

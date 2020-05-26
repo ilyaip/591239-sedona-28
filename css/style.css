@@ -3,12 +3,14 @@
   --basik-light-black: #333;
   --basik-white: #fff;
   --basik-white-dark: #EEEEEE;
+  --basik-white-deep: #F2F2F2;
+  --basik-white-deep-2: #EBEBEB;
   --basik-blue: #81B3D2;
   --basik-blue-dark: #669EC0;
   --basik-blue-deepdark: #5496BD;
   --basik-brown: #766357;
-  --basik-brown-dark: 604E43;
-  --basik-brown-deepdark: 503E33;
+  --basik-brown-dark: #604E43;
+  --basik-brown-deepdark: #503E33;
 }
 
 body {
@@ -37,20 +39,32 @@ li {
   list-style: none;
 }
 
+.visually-hidden {
+  visibility: hidden;
+}
+
+/* navigation */
+
 .main-navigation {
   line-height: 26px;
   font-weight: bold;
+  display: flex;
 }
 
 .site-navigation {
+  justify-content: space-around;
+  display: flex;
   color: var(--basik-black);
   list-style: none;
+  width: 100%;
 }
 
 .site-navigation a:hover,
 .site-navigation a:focus {
   color: var(--basik-blue);
 }
+
+/* welcome */
 
 .welcome {
   text-align: center;
@@ -65,6 +79,8 @@ li {
   font-weight: bold;
   text-align: center;
 }
+
+/* feature */
 
 .pre-feature-text {
   text-align: center;
@@ -103,8 +119,24 @@ li {
   content: "";
   display: block;
   background: url("../img/icon-1.svg") no-repeat 50% 50%;
-  width: 100px;
-  height: 100px;
+  width: 75px;
+  height: 72px;
+}
+
+.feature-eat::before {
+  content: "";
+  display: block;
+  background: url("../img/icon-2.svg") no-repeat 50% 50%;
+  width: 75px;
+  height: 70px;
+}
+
+.feature-souvenirs::before {
+  content: "";
+  display: block;
+  background: url("../img/icon-3.svg") no-repeat 50% 50%;
+  width: 64px;
+  height: 77px;
 }
 
 .feature-column {
@@ -130,4 +162,112 @@ li {
 
 .feature-2-text {
   width: 400px;
+}
+
+.feature-column-2 {
+  display: flex;
+}
+
+.feature-column-2 li {
+  width: 33%;
+}
+
+/* form */
+
+.form-question {
+  font-weight: bold;
+  line-height: 24px;
+  font-size: 30px;
+}
+
+.form-question + p {
+  color: var(--basik-light-black);
+}
+
+.search-form input {
+  background-color: var(--basik-white-deep);
+  border: none;
+}
+
+.search-form input:first-of-type,
+.search-form input:nth-of-type(2) {
+  height: 38px;
+  width: 346px;
+}
+
+.search-form input:last-of-type,
+.search-form input:nth-of-type(3) {
+  height: 38px;
+  width: 38px;
+  text-align: center;
+}
+.search-form input:hover {
+  background-color: var(--basik-white-deep-2);
+}
+
+.search-form input:focus {
+  background-color: var(--basik-white);
+}
+
+.search-hotels {
+  font: inherit;
+  border: none;
+  background-color: var(--basik-brown);
+  color: var(--basik-white);
+  font-size: 21px;
+  line-height: 26px;
+  width: 568px;
+  height: 86px;
+  font-weight: bold;
+}
+
+.search-hotels:hover {
+    background-color: var(--basik-brown-dark);
+}
+
+.search-hotels:active {
+  background-color: var(--basik-brown-deepdark);
+}
+
+.search-form label {
+  font: inherit;
+  font-weight: bold;
+  line-height: 26px;
+}
+
+.search {
+  font: inherit;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+  color: var(--basik-white);
+  background-color: var(--basik-blue);
+  border: none;
+  width: 458px;
+  height: 58px;
+}
+
+.search:hover {
+  background-color: var(--basik-blue-dark);
+}
+
+.search:active {
+  background-color: var(--basik-blue-deepdark);
+}
+
+/* footer */
+
+.footer-column {
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer-contacts {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+}
+
+.footer-column ul{
+  display: flex;
 }
