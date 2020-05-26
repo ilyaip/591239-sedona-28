@@ -1,0 +1,133 @@
+:root {
+  --basik-black: #000;
+  --basik-light-black: #333;
+  --basik-white: #fff;
+  --basik-white-dark: #EEEEEE;
+  --basik-blue: #81B3D2;
+  --basik-blue-dark: #669EC0;
+  --basik-blue-deepdark: #5496BD;
+  --basik-brown: #766357;
+  --basik-brown-dark: 604E43;
+  --basik-brown-deepdark: 503E33;
+}
+
+body {
+  min-width: 1220px;
+  margin: 0;
+  padding: 0;
+  font-family: "PT sans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: var(--basik-black);
+  background-color: var(--basik-white);
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+li {
+  list-style: none;
+}
+
+.main-navigation {
+  line-height: 26px;
+  font-weight: bold;
+}
+
+.site-navigation {
+  color: var(--basik-black);
+  list-style: none;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus {
+  color: var(--basik-blue);
+}
+
+.welcome {
+  text-align: center;
+  background-color: var(--basik-white-dark);
+  background: url("../img/welcomeshape.jpg") no-repeat center;
+  height: 509px;
+}
+
+.label {
+  line-height: 26px;
+  font-size: 21px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.pre-feature-text {
+  text-align: center;
+  color: var(--basik-light-black);
+}
+
+.feature-main-label {
+  color: var(--basik-white);
+  font-size: 21px;
+  font-weight: bold;
+}
+
+.feature-label {
+  color: var(--basik-black);
+  font-weight: bold;
+  font-size: 21px;
+}
+
+.feature-main-text {
+  color: var(--basik-white);
+}
+
+.feature-text {
+  color: var(--basik-light-black);
+}
+
+.feature-1,
+.feature-2 {
+  justify-content: center;
+  display: flex;
+  background-color: var(--basik-blue);
+  align-items: center;
+}
+
+.feature-live::before {
+  content: "";
+  display: block;
+  background: url("../img/icon-1.svg") no-repeat 50% 50%;
+  width: 100px;
+  height: 100px;
+}
+
+.feature-column {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  text-align: center;
+  align-items: center;
+}
+
+.feature-1-img {
+  order: 1;
+}
+
+.feature-1-text {
+  width: 400px;
+}
+
+.feature-2-img {
+  order: -1;
+}
+
+.feature-2-text {
+  width: 400px;
+}

@@ -3,11 +3,13 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link href="CSS/style.css" rel="stylesheet" />
   </head>
   <body>
     <header>
-      <nav>
-       <ul>
+      <nav class="main-navigation">
+       <ul class="site-navigation">
         <li><a href="">Информация</a></li>
         <li><a href="">Фото и видио</a></li>
         <li><a href="">Карта штата</a></li>
@@ -19,63 +21,82 @@
      </nav>
     </header>
     <main>
+      <!-- Приветствие - Седона -->
       <h1 class="visually-hidden">Седона</h1>
-      <img src="img/welcome.svg" alt="Добро пожаловать" width="457" height="351">
-      <section>
-      <div>
+      <div class="welcome">
+        <img src="img/welcome.svg" alt="Добро пожаловать" width="457" height="351">
+      </div>
+      <section class="">
+      <div class="label">
         Седона - небольшой городок в аризоне,
         заслуживающий большего!
       </div>
+
+      <!-- Преимущества -->
+
         <h2 class="visually-hidden">Преимущества</h2>
-        <p>
+        <p class="pre-feature-text">
           Рассмотрим 5 причин, по которым седона лучше, чем гранд каньон!
         </p>
         <ul>
           <li>
-            <h3>Настоящий городок</h3>
-            <p>№1</p>
-            <p>
-              Недона - не аттракцион для туристов, там течёт своя жизнь
-            </p>
-            <img src="img/famous1.jpg" alt="Преимущества Седоны" width="800" height="256">
-            <ul>
-              <li>
-                <h4>Жилье</h4>
+            <div class="feature-1">
+              <div class="feature-1-text">
+                <h3 class="feature-main-label">Настоящий городок</h3>
+                <p class="feature-main-text">№1</p>
+                <p class="feature-main-text">
+                Cедона - не аттракцион для туристов, там течёт своя жизнь
+                </p>
+              </div>
+              <div class="feature-1-img">
+                <img src="img/famous1.jpg" alt="Преимущества Седоны" width="800" height="256">
+              </div>
+            </div>
+            <ul class="feature-column">
+              <li class="feature-live">
+                <h4 class="feature-label">Жильё</h4>
                 <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
               </li>
-              <li>
-                <h4>Еда</h4>
+              <li class="feature-eat">
+                <h4 class="feature-label">Еда</h4>
                 <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
               </li>
-              <li>
-                <h4>Сувениры</h4>
+              <li class="feature-souvenirs">
+                <h4 class="feature-label">Сувениры</h4>
                 <p>Не только китайского, но и местного производства!</p>
               </li>
             </ul>
           </li>
-          <li>
-            <h3>Там есть мост дьявола</h3>
-            <p>№2</p>
-            <p>Да, по нему можно пройти! если конечно вы осмелитесь</p>
-            <img src="img/famous2.jpg" alt="Преимущества Седоны" width="800" height="256">
+          <li class="feature-2">
+            <div class="feature-2-text">
+              <h3 class="feature-main-label">Там есть мост дьявола</h3>
+              <p class="feature-main-text">№2</p>
+              <p class="feature-main-text">Да, по нему можно пройти! если конечно вы осмелитесь</p>
+            </div>
+            <div class="feature-2-img">
+              <img src="img/famous2.jpg" alt="Преимущества Седоны" width="800" height="256">
+            </div>
           </li>
           <li>
-            <h3>Небольшая площадь</h3>
+            <h3 class="feature-label">Небольшая площадь</h3>
             <p>№3</p>
             <p>Все достопримечательности находятся очень близко</p>
           </li>
           <li>
-            <h3>Красивая дорога</h3>
+            <h3 class="feature-label">Красивая дорога</h3>
             <p>№4</p>
             <p>Ехать в седону из лас-вегаса совсем не скучно!</p>
           </li>
           <li>
-            <h3>Мало туристов</h3>
+            <h3 class="feature-label">Мало туристов</h3>
             <p>№5</p>
             <p>Большинство едет в гранд каньон и толпится там</p>
           </li>
         </ul>
       </section>
+
+      <!-- Форма поиска гостиницы -->
+
       <section>
         <h2 class="visually-hidden">Поиск гостиницы</h2>
         <p>
