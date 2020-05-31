@@ -1,28 +1,29 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>hotels</title>
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link href="CSS/style.css" rel="stylesheet">
   </head>
-  <body>
-  <div class="hotels-container">
-    <header>
+  <body class="page-body">
+    <header class="main-header">
       <nav class="main-navigation">
-        <ul class="site-navigation">
+        <ul class="site-navigation container">
           <li><a href="">Информация</a></li>
-          <li><a href="">Фото и видео</a></li>
-          <li><a href="">Карта Штата</a></li>
+          <li><a href="">Фото и видио</a></li>
+          <li><a href="">Карта штата</a></li>
           <li><a href="hotels.html">Гостиницы</a></li>
         </ul>
-          <a href="index.html"><img src="img/logo.svg" alt="Логотип Седона" width="138" height="70"></a>
+        <a href="index.html" class="header-logo">
+          <img src="img/logo.svg" alt="Логотип Седона" width="138" height="70">
+        </a>
       </nav>
     </header>
     <main>
       <h1 class="visually-hidden">Поиск отеля</h1>
       <section class="filter-section">
-        <form class="hotels-filter" action="http://echo.htmlacademy.ru/" method="post">
+        <form class="hotels-filter container" action="http://echo.htmlacademy.ru/" method="post">
           <fieldset class="filter-1">
             <legend class="label-filter">Инфраструктура:</legend>
             <ul>
@@ -61,78 +62,90 @@
             <legend class="label-filter">Стоимость в сутки (р):</legend>
             <p class="filter-text">от 0</p>
             <p class="filter-text">до 3000</p>
+            <button class="search-hotel" type="submit">Показать</button>
           </fieldset>
-          <button class="search-hotel" type="submit">Показать</button>
         </form>
       </section>
       <section>
         <h2 class="visually-hidden">Результаты поиска отелей</h2>
-        <div>
+        <div class="search-result container">
           <p class="searched">Найдено: 3</p>
           <p class="sort">Сортировка:</p>
-          <ul>
-            <li><a class="sort-label" href="">По цене</a></li>
-            <li><a class="sort-label" href="">По типу</a></li>
-            <li><a class="sort-label" href="">По рейтингу</a></li>
+          <ul class="sort-index">
+            <li><a class="sort-label-1" href="">По цене</a></li>
+            <li><a class="sort-label-2" href="">По типу</a></li>
+            <li><a class="sort-label-3" href="">По рейтингу</a></li>
           </ul>
         </div>
-        <ul>
-          <li>
-            <img src="img/amara.jpg" alt="Фото гостиницы" width="135" height="90">
-            <h3>AMARA RESORT & SPA</h3>
-            <dl>
-              <p>Гостиница</p>
-              <p>от 4000 р.</p>
-            <button class="about" href="button">Подробнее</button>
-            <button class="book" type="button">Забронировать</button>
-            <p>Рейтинг: 8,5</p>
+        <ul class="result container">
+          <li class="about-hotel">
+            <img class="hotel-photo" src="img/amara.jpg" alt="Фото гостиницы" width="135" height="90">
+            <div class="hotel-info">
+              <h3>AMARA RESORT & SPA</h3>
+              <div class="how-much">
+                <p>Гостиница</p>
+                <p>от 4000 р.</p>
+              </div>
+              <button class="about" href="button">Подробнее</button>
+              <button class="book" type="button">Забронировать</button>
+            </div>
+            <p class="rating">Рейтинг: 8,5</p>
           </li>
-          <li>
-            <img src="img/desert.jpg" alt="Фото мотеля" width="135" height="90">
-            <h3>DESERT QUAIL INN</h3>
-              <p>Мотель</p>
-              <p>от 3000 р.</p>
+          <li class="about-hotel">
+            <img class="hotel-photo" src="img/desert.jpg" alt="Фото мотеля" width="135" height="90">
+            <div class="hotel-info">
+              <h3>DESERT QUAIL INN</h3>
+              <div class="how-much">
+                <p>Мотель</p>
+                <p>от 3000 р.</p>
+              </div>
             <button class="about" href="">Подробнее</button>
             <button class="book" href="">Забронировать</button>
-            <p>Рейтинг: 8,9</p>
+            </div>
+            <p class="rating">Рейтинг: 8,9</p>
           </li>
-          <li>
-            <img src="img/villas.jpg" alt="Фото апартаментов" width="135" height="90">
-            <h3>AMARA RESORT & SPA</h3>
-              <p>Апартаменты</p>
-              <p>от 2000 р.</p>
+          <li class="about-hotel">
+            <img class="hotel-photo" src="img/villas.jpg" alt="Фото апартаментов" width="135" height="90">
+            <div class="hotel-info">
+              <h3>AMARA RESORT & SPA</h3>
+              <div class="how-much">
+                <p>Апартаменты</p>
+                <p>от 2000 р.</p>
+              </div>
             <button class="about" href="">Подробнее</button>
             <button class="book" href="">Забронировать</button>
-            <p>Рейтинг: 9,2</p>
+            </div>
+            <p class="rating">Рейтинг: 9,2</p>
           </li>
         </ul>
       </section>
     </main>
     <footer class="footer-column">
-      <section>
+      <section class="contacts">
         <h2 class="visually-hidden">Как с нами связаться?</h2>
-        <p>
+        <p class="footer-contacts">
           #visitsedona <br>
           <a href="tel:84956660166">+7 (495) 666-01-66</a>
         </p>
       </section>
-      <section>
+      <section class="smm">
         <h2 class="visually-hidden">Давайте дружить!</h2>
         <ul>
-          <li>
-            <a href="#">twitter</a>
+          <li class="twitter">
+            <a class="" href="#">twitter</a>
           </li>
-          <li>
-            <a href="#">facebook</a>
+          <li class="facebook">
+            <a class="" href="#">facebook</a>
           </li>
-          <li>
-            <a href="#">youtube</a>
+          <li class="youtube">
+            <a class="" href="#">youtube</a>
           </li>
         </ul>
       </section>
-      <p>website by</p>
-      <a href="https://htmlacademy.ru"><img src="img/logo-htmlacademy.svg" alt="logo HTML academy"></a>
+      <div class="byacademy">
+        <p>Website by</p>
+        <a href="https://htmlacademy.ru"><img src="img/logo-htmlacademy.svg" alt="logo HTML academy" width="115" height="41"></a>
+      </div>
     </footer>
-  </div>
   </body>
 </html>
