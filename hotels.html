@@ -4,16 +4,17 @@
     <meta charset="utf-8">
     <title>hotels</title>
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="normalize.css">
     <link href="CSS/style.css" rel="stylesheet">
   </head>
   <body class="page-body">
     <header class="main-header">
       <nav class="main-navigation">
-        <ul class="site-navigation container">
+        <ul class="site-navigation container style-none">
           <li><a href="">Информация</a></li>
           <li><a href="">Фото и видео</a></li>
           <li><a href="">Карта штата</a></li>
-          <li><a href="hotels.html">Гостиницы</a></li>
+          <li><a class="active-page" href="hotels.html">Гостиницы</a></li>
         </ul>
         <a href="index.html" class="header-logo">
           <img src="img/logo.svg" alt="Логотип Седона" width="138" height="70">
@@ -26,7 +27,7 @@
         <form class="hotels-filter container" action="http://echo.htmlacademy.ru/" method="post">
           <fieldset class="filter-1">
             <legend class="label-filter">Инфраструктура:</legend>
-            <ul>
+            <ul class="style-none">
               <li>
                <input class="checkbox-filter" type="checkbox" name="sweembox" value="sweembow" id="check-sweem">
                <label class="filter-text" for="check-sweem">Бассейн</label>
@@ -43,7 +44,7 @@
           </fieldset>
           <fieldset class="filter-2">
             <legend class="label-filter">Тип жилья:</legend>
-            <ul>
+            <ul class="style-none">
               <li>
                 <input class="checkbox-filter" type="checkbox" id="check-hotel" name="hotel" value="hotel">
                 <label class="filter-text" for="check-hotel">Гостиница</label>
@@ -71,17 +72,21 @@
         <div class="search-result container">
           <p class="searched">Найдено: 3</p>
           <p class="sort">Сортировка:</p>
-          <ul class="sort-index">
-            <li><a class="sort-label-1" href="">По цене</a></li>
-            <li><a class="sort-label-2" href="">По типу</a></li>
-            <li><a class="sort-label-3" href="">По рейтингу</a></li>
+          <ul class="sort-index style-none">
+            <li><a class="sort-label" href="">По цене</a></li>
+            <li><a class="sort-label" href="">По типу</a></li>
+            <li><a class="sort-label" href="">По рейтингу</a></li>
           </ul>
+          <a class="down-arrow" aria-label="сортировать по убыванию">
+          </a>
+          <a class="up-arrow" aria-label="сортировать по возрастанию">
+          </a>
         </div>
-        <ul class="result container">
+        <ul class="result container style-none">
           <li class="about-hotel">
             <img class="hotel-photo" src="img/amara.jpg" alt="Фото гостиницы" width="135" height="90">
             <div class="hotel-info">
-              <h3>AMARA RESORT & SPA</h3>
+              <h3><a href="#">AMARA RESORT & SPA<a></h3>
               <div class="how-much">
                 <p>Гостиница</p>
                 <p>от 4000 р.</p>
@@ -94,7 +99,7 @@
           <li class="about-hotel">
             <img class="hotel-photo" src="img/desert.jpg" alt="Фото мотеля" width="135" height="90">
             <div class="hotel-info">
-              <h3>DESERT QUAIL INN</h3>
+              <h3><a href="#">DESERT QUAIL INN</a></h3>
               <div class="how-much">
                 <p>Мотель</p>
                 <p>от 3000 р.</p>
@@ -107,7 +112,7 @@
           <li class="about-hotel">
             <img class="hotel-photo" src="img/villas.jpg" alt="Фото апартаментов" width="135" height="90">
             <div class="hotel-info">
-              <h3>AMARA RESORT & SPA</h3>
+              <h3><a href="#">Villas at Poco Diablo</a></h3>
               <div class="how-much">
                 <p>Апартаменты</p>
                 <p>от 2000 р.</p>
@@ -130,14 +135,14 @@
       </section>
       <section class="smm">
         <h2 class="visually-hidden">Давайте дружить!</h2>
-        <ul>
-          <li class="twitter">
+        <ul class="style-none">
+          <li class="social-networks">
             <a class="" href="#">twitter</a>
           </li>
-          <li class="facebook">
+          <li class="social-networks">
             <a class="" href="#">facebook</a>
           </li>
-          <li class="youtube">
+          <li class="social-networks">
             <a class="" href="#">youtube</a>
           </li>
         </ul>
