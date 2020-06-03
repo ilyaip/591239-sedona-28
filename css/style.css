@@ -13,6 +13,7 @@
   --basik-brown-dark: #604E43;
   --basik-brown-deepdark: #503E33;
   --basik-main-background-color: #6aaee4;
+  --basik-rating: #666666;
 }
 
 
@@ -681,7 +682,15 @@ img {
 
 .about-hotel {
   display: flex;
+  justify-content: space-between;
+  text-align: left;
 }
+
+.hotel-and-text {
+  display: flex;
+}
+
+
 
 .hotel-photo {
   margin-left: 71px;
@@ -719,11 +728,11 @@ img {
 }
 
 .rating {
-  margin-left: auto;
   margin-top: 96px;
   margin-right: 85px;
   background-color: var(--basik-white-deep);
   padding: 2px 5px 2px 5px;
+  color: var(--basik-rating);
 }
 
 
