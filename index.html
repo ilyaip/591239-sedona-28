@@ -111,20 +111,30 @@
         </p>
         <button type="button" class="search-hotels">Поиск гостиницы в Седоне</button>
         <form class="search-form container" action="http://echo.htmlacademy.ru/" method="post">
-          <label for="date-check-in">Дата заезда</label>
-          <input type="text" id="date-check-in" name="date" placeholder="24 апреля 2017">
-          <button class="button-check-in" type="button" aria-label="Выбрать дату заезда"></button>
-          <label for="date-check-out">Дата выезда</label>
-          <input type="text" id="date-check-out" name="date" placeholder="4 июля 2017">
-          <button class="button-check-out" type="button" aria-label="Выбрать дату выезда"></button>
-          <label for="check-parents">Взрослые</label>
-          <button class="button-less" type="button" aria-label="Меньше">-</button>
-          <input type="text" name="parents" placeholder="2" id="chek-parents">
-          <button class="button-more" type="button" aria-label="Больше">+</button>
-          <label for="check-child">Дети</label>
-          <button class="button-less" type="button" aria-label="Меньше">-</button>
-          <input type="text" name="child" placeholder="0" id="check-child">
-          <button class="button-more" type="button" aria-label="Больше">+</button>
+          <div class="date-check">
+            <label for="date-check-in">Дата заезда</label>
+            <input type="text" id="date-check-in" name="date" placeholder="24 апреля 2017">
+            <button class="button-check-in" type="button" aria-label="Выбрать дату заезда"></button>
+          </div>
+          <div class="date-check">
+            <label for="date-check-out">Дата выезда</label>
+            <input type="text" id="date-check-out" name="date" placeholder="4 июля 2017">
+            <button class="button-check-out" type="button" aria-label="Выбрать дату выезда"></button>
+          </div>
+          <div class="less-more">
+            <div>
+              <label class="parents-hotel" for="check-parents">Взрослые</label>
+              <button class="button-less" type="button" aria-label="Меньше">-</button>
+              <input class="check-button" type="text" name="parents" placeholder="2" id="chek-parents">
+              <button class="button-more" type="button" aria-label="Больше">+</button>
+            </div>
+            <div>
+              <label class="child-hotel" for="check-child">Дети</label>
+              <button class="button-less" type="button" aria-label="Меньше">-</button>
+              <input class="check-button" type="text" name="child" placeholder="0" id="check-child">
+              <button class="button-more" type="button" aria-label="Больше">+</button>
+            </div>
+          </div>
           <button class="search" type="submit">Найти</button>
         </form>
       </section>
@@ -140,20 +150,20 @@
       <section class="smm">
         <h2 class="visually-hidden">Давайте дружить!</h2>
         <ul class="style-none">
-          <li class="social-networks">
-            <a class="" href="#">twitter</a>
+          <li>
+            <a class="social-networks" href="#"><span class="visually-hidden">twitter</span></a>
           </li>
-          <li class="social-networks">
-            <a class="" href="#">facebook</a>
+          <li>
+            <a class="social-networks" href="#"><span class="visually-hidden">facebook</span></a>
           </li>
-          <li class="social-networks">
-            <a class="" href="#">youtube</a>
+          <li>
+            <a class="social-networks" href="#"><span class="visually-hidden">youtube</span></a>
           </li>
         </ul>
       </section>
       <div class="byacademy">
-        <p>Website by</p>
-        <a href="https://htmlacademy.ru"><img src="img/logo-htmlacademy.svg" alt="logo HTML academy" width="115" height="41"></a>
+        <p class="website-by">Website by</p>
+        <a class="logo-htmlacademy" href="https://htmlacademy.ru"><snap class="visually-hidden">сделано в HTML academy</snap></a>
       </div>
     </footer>
   </body>

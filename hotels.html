@@ -61,9 +61,21 @@
           </fieldset>
           <fieldset class="filter-3">
             <legend class="label-filter">Стоимость в сутки (р):</legend>
-            <p class="filter-text">от 0</p>
-            <p class="filter-text">до 3000</p>
-            <button class="search-hotel" type="submit">Показать</button>
+            <div class="sum-range">
+              <div class="sum">
+                <p class="filter-text">от 0</p>
+                <div class="stick"></div>
+                <p class="filter-text">до 3000</p>
+              </div>
+              <div class="range-controls">
+                <div class="scale">
+                  <div class="bar"></div>
+                </div>
+                <div class="toggle toggle-min"></div>
+                <div class="toggle toggle-max"></div>
+              </div>
+              <button class="search-hotel" type="submit">Показать</button>
+            </div>
           </fieldset>
         </form>
       </section>
@@ -148,20 +160,20 @@
       <section class="smm">
         <h2 class="visually-hidden">Давайте дружить!</h2>
         <ul class="style-none">
-          <li class="social-networks">
-            <a class="" href="#">twitter</a>
+          <li>
+            <a class="social-networks" href="#"><span class="visually-hidden">twitter</span></a>
           </li>
-          <li class="social-networks">
-            <a class="" href="#">facebook</a>
+          <li>
+            <a class="social-networks" href="#"><span class="visually-hidden">facebook</span></a>
           </li>
-          <li class="social-networks">
-            <a class="" href="#">youtube</a>
+          <li>
+            <a class="social-networks" href="#"><span class="visually-hidden">youtube</span></a>
           </li>
         </ul>
       </section>
       <div class="byacademy">
-        <p>Website by</p>
-        <a href="https://htmlacademy.ru"><img src="img/logo-htmlacademy.svg" alt="logo HTML academy" width="115" height="41"></a>
+        <p class="website-by">Website by</p>
+        <a class="logo-htmlacademy" href="https://htmlacademy.ru"><snap class="visually-hidden">сделано в HTML academy</snap></a>
       </div>
     </footer>
   </body>
