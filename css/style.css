@@ -576,15 +576,6 @@ li:nth-of-type(3) .social-networks {
   background-position: center;
 }
 
-.social-networks:hover,
-.social-networks:focus {
-  background-color: var(--basik-blue-dark);
-}
-
-.social-networks:active {
-  opacity: 0.3;
-}
-
 .footer-contacts {
   font-size: 21px;
   line-height: 26px;
@@ -728,8 +719,10 @@ li:nth-of-type(3) .social-networks {
   background-image: url("../img/toggle.svg");
   width: 19px;
   height: 21px;
-  top: 19px;
+  top: 18px;
   left: -10px;
+  border-radius: 50%;
+  border: none;
 }
 
 .range-controls .toggle-max {
@@ -737,8 +730,10 @@ li:nth-of-type(3) .social-networks {
   background-image: url("../img/toggle.svg");
   width: 19px;
   height: 21px;
-  top: 19px;
+  top: 18px;
   left: 240px;
+  border-radius: 50%;
+  border: none;
 }
 
 .filter-text {
