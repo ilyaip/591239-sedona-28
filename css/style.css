@@ -527,6 +527,7 @@ input[type="radio"].visually-hidden {
   height: 38px;
   margin-left: -4px;
   margin-right: -4px;
+  padding: 0;
 }
 
 .date-check label {
