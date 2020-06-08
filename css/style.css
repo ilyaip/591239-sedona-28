@@ -432,6 +432,7 @@ input[type="radio"].visually-hidden {
   position: relative;
   min-width: 458px;
   align-items: center;
+  justify-content: space-between;
 }
 
 .date-check input {
@@ -534,10 +535,14 @@ input[type="radio"].visually-hidden {
   margin-right: 18px;
 }
 
-.parents-hotel,
+.parents-hotel {
+  box-sizing: border-box;
+  margin-right: 40px;
+}
+
 .child-hotel {
   box-sizing: border-box;
-  margin-right: 45px;
+  margin-right: 30px;
 }
 
 .button-check {
@@ -555,6 +560,10 @@ input[type="radio"].visually-hidden {
   flex-grow: 1;
   justify-content: space-between;
   box-sizing: border-box;
+}
+
+.less-more div:nth-of-type(2) button:nth-of-type(2) {
+  margin-right: 0px;
 }
 
 .button-check:hover {
