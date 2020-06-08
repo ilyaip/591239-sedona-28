@@ -5,7 +5,7 @@
     <title>HTML Academy: Седона</title>
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="normalize.css">
-    <link href="CSS/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/style.css">
   </head>
   <body class="page-body">
     <header class="main-header">
@@ -39,19 +39,17 @@
         <p class="pre-feature-text">
           Рассмотрим 5 причин, по которым седона лучше, чем гранд каньон!
         </p>
-        <ul class="container style-none">
-          <li class="">
-            <div class="feature-1">
-              <div class="feature-1-text">
-                <h3 class="feature-main-label">Настоящий городок</h3>
-                <p class="feature-main-text">№1</p>
-                <p class="feature-main-text">
-                Cедона - не аттракцион для туристов, там течёт своя жизнь
-                </p>
-              </div>
-              <div class="feature-1-img">
-                <img src="img/famous1.jpg" alt="Преимущества Седоны" width="800" height="256">
-              </div>
+        <ul class="feature-1 container style-none">
+          <li class="real-town">
+            <div class="feature-1-text">
+              <h3 class="feature-main-label">Настоящий городок</h3>
+              <p class="feature-main-text">№1</p>
+              <p class="feature-main-text">
+              Cедона - не аттракцион для туристов, там течёт своя жизнь
+              </p>
+            </div>
+            <div class="feature-1-img">
+              <img src="img/famous1.jpg" alt="Преимущества Седоны" width="800" height="256">
             </div>
             <ul class="feature-column style-none">
               <li class="feature-live">
@@ -78,23 +76,21 @@
               <img src="img/famous2.jpg" alt="Преимущества Седоны" width="800" height="256">
             </div>
           </li>
-          <div class="feature-column-2">
-            <li>
-              <h3 class="feature-label">Небольшая площадь</h3>
-              <p>№3</p>
-              <p>Все достопримечательности находятся очень близко</p>
-            </li>
-            <li>
-              <h3 class="feature-label">Красивая дорога</h3>
-              <p>№4</p>
-              <p>Ехать в седону из лас-вегаса совсем не скучно!</p>
-            </li>
-            <li>
-              <h3 class="feature-label">Мало туристов</h3>
-              <p>№5</p>
-              <p>Большинство едет в гранд каньон и толпится там</p>
-            </li>
-          </div>
+          <li class="feature-3-4-5">
+            <h3 class="feature-label">Небольшая площадь</h3>
+            <p>№3</p>
+            <p>Все достопримечательности находятся очень близко</p>
+          </li>
+          <li class="feature-3-4-5">
+            <h3 class="feature-label">Красивая дорога</h3>
+            <p>№4</p>
+            <p>Ехать в седону из лас-вегаса совсем не скучно!</p>
+          </li>
+          <li class="feature-3-4-5">
+            <h3 class="feature-label">Мало туристов</h3>
+            <p>№5</p>
+            <p>Большинство едет в гранд каньон и толпится там</p>
+          </li>
         </ul>
       </section>
 
@@ -106,7 +102,7 @@
           Заитересовались?
         </p>
         <p>
-          Укажите предполагаемые даты поездки,
+          Укажите предполагаемые даты поездки, <br>
           и мы покажем вам лучшие предложения гостиниц в седоне
         </p>
         <button type="button" class="search-hotels">Поиск гостиницы в Седоне</button>
@@ -114,18 +110,18 @@
           <div class="date-check">
             <label for="date-check-in">Дата заезда</label>
             <input type="text" id="date-check-in" name="date" placeholder="24 апреля 2017">
-            <button class="button-check-in" type="button" aria-label="Выбрать дату заезда"></button>
+            <button class="button-check" type="button" aria-label="Выбрать дату заезда"></button>
           </div>
           <div class="date-check">
-            <label for="date-check-out">Дата выезда</label>
+            <label for="date-check">Дата выезда</label>
             <input type="text" id="date-check-out" name="date" placeholder="4 июля 2017">
-            <button class="button-check-out" type="button" aria-label="Выбрать дату выезда"></button>
+            <button class="button-check" type="button" aria-label="Выбрать дату выезда"></button>
           </div>
           <div class="less-more">
             <div>
               <label class="parents-hotel" for="check-parents">Взрослые</label>
               <button class="button-less" type="button" aria-label="Меньше">-</button>
-              <input class="check-button" type="text" name="parents" placeholder="2" id="chek-parents">
+              <input class="check-button" type="text" name="parents" placeholder="2" id="check-parents">
               <button class="button-more" type="button" aria-label="Больше">+</button>
             </div>
             <div>
@@ -144,26 +140,38 @@
         <h2 class="visually-hidden">Как с нами связаться?</h2>
         <p class="footer-contacts">
           #visitsedona <br>
-          <a href="tel:84956660166">+7 (495) 666-01-66</a>
+          <a href="tel:84956660166">ТЕЛ: +7 (495) 666-01-66</a>
         </p>
       </section>
       <section class="smm">
         <h2 class="visually-hidden">Давайте дружить!</h2>
-        <ul class="style-none">
+        <ul class="social-column style-none">
           <li>
-            <a class="social-networks" href="#"><span class="visually-hidden">twitter</span></a>
+            <a class="social-networks" href="#" aria-label="twitter">
+              <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M10.95 1.14403C12.635 0.648028 13.934 1.41403 14.527 2.32303C15.2 2.09203 15.858 1.84203 16.538 1.61503C16.5249 2.30139 16.2117 2.94755 15.681 3.38303C16.366 3.55303 16.985 2.89203 16.985 2.89203C16.816 3.89203 15.979 4.68003 15.422 4.91603C15.191 11.666 12.247 16.133 5.34498 15.998H4.89898C4.48898 15.998 0.734977 15.538 0.000976562 14.111C2.27198 14.307 3.89398 13.689 4.69398 12.934C3.73398 12.634 2.01498 12.457 1.71498 9.98403C2.06398 10.09 2.27898 10.212 2.90498 10.103C1.70498 9.24703 0.373977 8.53003 0.447977 6.33003C0.732977 6.65803 1.51498 6.86603 1.78798 6.80203C1.08498 6.56103 -0.182023 3.44203 0.893977 1.85003C2.71198 3.70403 4.62898 5.45603 8.04598 5.62303C8.25398 3.33003 9.18298 1.79303 10.95 1.14403Z" fill="white"/>
+              </svg>
+            </a>
           </li>
           <li>
-            <a class="social-networks" href="#"><span class="visually-hidden">facebook</span></a>
+            <a class="social-networks" href="#" aria-label="facebook">
+              <svg width="12" height="22" viewBox="0 0 12 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 4V0H8C5.79086 0 4 1.79086 4 4V8H0V12H4V22H8V12H12V8H8V4H12Z" fill="white"/>
+              </svg>
+            </a>
           </li>
           <li>
-            <a class="social-networks" href="#"><span class="visually-hidden">youtube</span></a>
+            <a class="social-networks" href="#" aria-label="youtube">
+              <svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M3 0H17C18.65 0 20 1.35 20 3V13C20 14.65 18.65 16 17 16H3C1.35 16 0 14.65 0 13V3C0 1.35 1.35 0 3 0ZM6.027 4.002V11.998L15.014 8L6.027 4.002Z" fill="white"/>
+              </svg>
+            </a>
           </li>
         </ul>
       </section>
       <div class="byacademy">
         <p class="website-by">Website by</p>
-        <a class="logo-htmlacademy" href="https://htmlacademy.ru"><snap class="visually-hidden">сделано в HTML academy</snap></a>
+        <a class="logo-htmlacademy" href="https://htmlacademy.ru" aria-label="сделано в HTML academy"></a>
       </div>
     </footer>
   </body>
