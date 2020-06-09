@@ -17,6 +17,7 @@
   --basik-brown-deepdark-rgba: rgba(80, 62, 51, 0.3);
   --basik-main-background-color: #6aaee4;
   --basik-rating: #666666;
+  --basik-border: #E5E5E5;
 }
 
 
@@ -120,7 +121,7 @@ input[type="radio"].visually-hidden {
 .site-navigation {
   display: flex;
   flex-wrap: wrap;
-  height: 70px;
+  height: 56px;
   list-style: none;
   padding-top: 15px;
   padding-left: 72px;
@@ -140,11 +141,13 @@ input[type="radio"].visually-hidden {
 .site-navigation li:nth-of-type(2) {
   flex-grow: 1;
   text-align: left;
+  margin-left: -73px;
 }
 
 .site-navigation li:nth-of-type(3) {
   flex-grow: 1;
   text-align: right;
+  margin-right: -60px;
 }
 
 .site-navigation li:nth-of-type(4) {
@@ -172,7 +175,6 @@ input[type="radio"].visually-hidden {
 
 .welcome {
   position: relative;
-  margin-top: -15px;
   background-color: var(--basik-main-background-color);
   background: url("../img/background-index.jpg") no-repeat center;
   height: 509px;
@@ -191,7 +193,7 @@ input[type="radio"].visually-hidden {
 .shape {
   position: absolute;
   top: 77px;
-  left: 381px;
+  left: 372px;
 }
 
 .label {
@@ -203,6 +205,7 @@ input[type="radio"].visually-hidden {
   width: 470px;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 47px;
 }
 
 /* feature */
@@ -222,6 +225,7 @@ input[type="radio"].visually-hidden {
 .feature-main-label {
   color: var(--basik-white);
   font-size: 21px;
+  line-height: 21px;
   font-weight: 700;
 }
 
@@ -232,6 +236,7 @@ input[type="radio"].visually-hidden {
   width: 110px;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 20px;
 }
 
 
@@ -243,13 +248,13 @@ input[type="radio"].visually-hidden {
 .feature-1 .feature-main-label {
   width: 122px;
   margin: 0 auto;
-  margin-top: 42px;
+  margin-top: 48px;
 }
 
 .feature-1 .feature-main-text {
-  width: 297px;
+  width: 310px;
   margin: 0 auto;
-  margin-top: 23px;
+  margin-top: 25px;
 }
 
 .feature-1-img {
@@ -290,6 +295,12 @@ input[type="radio"].visually-hidden {
 .feature-eat,
 .feature-souvenirs {
   flex-grow: 1;
+  box-sizing: border-box;
+  padding-bottom: 35px;
+}
+
+.feature-live {
+  padding-left: 15px;
 }
 
 .feature-live p {
@@ -378,21 +389,26 @@ input[type="radio"].visually-hidden {
 .feature-3-4-5 {
   min-height: 256px;
   flex-grow: 1;
-  padding-top: 47px;
-  padding-bottom: 54px;
+  padding-top: 27px;
+  padding-bottom: 24px;
   box-sizing: border-box;
   background-color: var(--basik-white-dark);
 }
 
 .feature-3-4-5 p {
-  width: 250px;
+  width: 270px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.feature-3-4-5 p + p {
+  margin-top: 30px;
 }
 
 /* form */
 
 .form-question {
+  margin-top: 54px;
   font-weight: 700;
   line-height: 24px;
   font-size: 30px;
@@ -402,7 +418,7 @@ input[type="radio"].visually-hidden {
   color: var(--basik-light-black);
   width: 435px;
   margin: auto;
-  margin-bottom: 25px;
+  margin-bottom: 45px;
   line-height: 24px;
 }
 
@@ -410,6 +426,8 @@ input[type="radio"].visually-hidden {
   display: flex;
   flex-wrap: wrap;
   padding: 55px;
+  padding-bottom: 10px;
+  padding-top: 35px;
   box-sizing: border-box;
   width: 568px;
   min-height: 395px;
@@ -419,12 +437,19 @@ input[type="radio"].visually-hidden {
 
 .search-form .date-check {
   width: 100%;
-  min-width: 458px;
+  margin-bottom: -13px;
+  box-sizing: border-box;
+}
+
+.date-check:nth-of-type(2) {
+  margin-top: -5px;
+  margin-bottom: 5px;
 }
 
 .search-form input {
   background-color: var(--basik-white-deep);
   border: none;
+  outline: none;
 }
 
 .date-check {
@@ -464,6 +489,7 @@ input[type="radio"].visually-hidden {
 }
 
 .search-form input:focus {
+  border: 2px solid var(--basik-border);
   background-color: var(--basik-white);
 }
 
@@ -521,7 +547,9 @@ input[type="radio"].visually-hidden {
 
 .button-more,
 .button-less {
+  position: relative;
   border: none;
+  outline: none;
   background-color: var(--basik-white-deep);
   box-sizing: border-box;
   width: 38px;
@@ -529,6 +557,44 @@ input[type="radio"].visually-hidden {
   margin-left: -4px;
   margin-right: -4px;
   padding: 0;
+}
+
+.button-more::after {
+  content: '';
+  position: absolute;
+  background: url("../img/plus-1.svg") no-repeat;
+  top: 13px;
+  right: 13px;
+  width: 11px;
+  height: 11px;
+}
+
+.button-more:hover::after,
+.button-more:focus::after {
+  background: url("../img/plus-2.svg") no-repeat;
+}
+
+.button-more:active::after {
+  background: url("../img/plus-3.svg") no-repeat;
+}
+
+.button-less::after {
+  content: '';
+  position: absolute;
+  background: url("../img/min.svg") no-repeat;
+  top: 19px;
+  right: 13px;
+  width: 11px;
+  height: 11px;
+}
+
+.button-less:hover::after,
+.button-less:focus::after {
+  background: url("../img/min-2.svg") no-repeat;
+}
+
+.button-less:active::after {
+  background: url("../img/min-3.svg") no-repeat;
 }
 
 .date-check label {
@@ -547,12 +613,13 @@ input[type="radio"].visually-hidden {
 
 .button-check {
   position: absolute;
-  top: 20px;
-  right: 15px;
+  top: 30px;
+  right: 10px;
   background: url("../img/calendar.svg") no-repeat;
   width: 21px;
   height: 23px;
   border: none;
+  outline: none;
 }
 
 .less-more {
@@ -575,12 +642,19 @@ input[type="radio"].visually-hidden {
   background-image: url("../img/calendar-active.svg");
 }
 
+.form-section {
+  margin-bottom: 95px;
+}
+
 /* footer */
 
 .footer-column {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
+  box-sizing: border-box;
+  padding-left: 123px;
+  padding-right: 136px;
 }
 
 .smm {
@@ -636,11 +710,14 @@ li:nth-of-type(3) .social-networks {
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
-  text-align: left;
+  text-align: center;
+  margin-top: 10px;
 }
 
 .footer-contacts a{
   color: var(--basik-black);
+  display: block;
+  margin-top: 10px;
 }
 
 .footer-column ul {
@@ -683,25 +760,19 @@ li:nth-of-type(3) .social-networks {
 
 .hotels-filter {
   display: flex;
+  justify-content: space-between;
 }
 
 .filter-1 {
-  margin-left: 72px;
-  margin-right: 119px;
-  margin-top: 13px;
+  margin-left: 63px;
+  margin-right: 51px;
+  margin-top: 27px;
   margin-bottom: 31px;
 }
 
 .filter-2 {
   margin-left: 0;
-  margin-top: 13px;
-  margin-bottom: 31px;
-}
-
-.filter-3 {
-  margin-left: 200px;
-  margin-right: auto;
-  margin-top: 13px;
+  margin-top: 27px;
   margin-bottom: 31px;
 }
 
@@ -709,6 +780,7 @@ li:nth-of-type(3) .social-networks {
   font-weight: 700;
   font-size: 16px;
   color: var(--basik-white);
+  margin-bottom: 10px;
 }
 
 .filter-1,
@@ -720,20 +792,34 @@ li:nth-of-type(3) .social-networks {
 }
 
 .filter-3 {
-  margin-right: 73px;
-  width: 320px;
+  margin-right: 15px;
+  margin-top: 26px;
+  margin-left: 280px;
+  width: 317px;
   height: 217px;
 }
+
+.filter-1 .label-filter,
+.filter-2 .label-filter {
+  margin-bottom: 15px;
+}
+
+.filter-1 li,
+.filter-2 li {
+  margin-bottom: 16px;
+}
+
 .sum-range {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  width: 317px;
 }
 
 .sum {
   position: relative;
   display: flex;
-  width: 100%;
+  width: 317px;
   height: 36px;
   align-items: center;
   border: 2px solid #FFFFFF;
@@ -749,6 +835,7 @@ li:nth-of-type(3) .social-networks {
   color: var(--basik-white);
   background-color: transparent;
   border: none;
+  outline: none;
 }
 
 .stick {
@@ -763,9 +850,10 @@ li:nth-of-type(3) .social-networks {
   position: relative;
   width: 317px;
   height: 28px;
-  padding-top: 27px;
-  margin-right: 10px;
+  padding-top: 20px;
+  margin-right: 0px;
   margin-left: 10px;
+  margin-bottom: 5px;
 }
 
 .range-controls .scale {
@@ -784,10 +872,11 @@ li:nth-of-type(3) .social-networks {
   background-image: url("../img/toggle.svg");
   width: 19px;
   height: 21px;
-  top: 18px;
+  top: 12px;
   left: -10px;
   border-radius: 50%;
   border: none;
+  outline: none;
 }
 
 .range-controls .toggle-max {
@@ -795,10 +884,11 @@ li:nth-of-type(3) .social-networks {
   background-image: url("../img/toggle.svg");
   width: 19px;
   height: 21px;
-  top: 18px;
+  top: 12px;
   left: 240px;
   border-radius: 50%;
   border: none;
+  outline: none;
 }
 
 .toggle:hover,
@@ -806,7 +896,7 @@ li:nth-of-type(3) .social-networks {
   background-image: url("../img/toggle-hover.svg");
   width: 23px;
   height: 24px;
-  top: 17px;
+  top: 11px;
 }
 
 .filter-text {
@@ -819,6 +909,7 @@ li:nth-of-type(3) .social-networks {
   display: flex;
   position: relative;
   height: 81px;
+  margin-top: 5px;
 }
 
 .down-arrow {
@@ -863,6 +954,7 @@ li:nth-of-type(3) .social-networks {
   background-color: transparent;
   width: 137px;
   height: 36px;
+  outline: none;
 }
 
 .search-hotel:hover {
@@ -885,7 +977,6 @@ li:nth-of-type(3) .social-networks {
   background-color: var(--basik-blue);
   width: 1200px;
   height: 217px;
-  margin-top: -15px;
 }
 
 .searched {
@@ -940,6 +1031,14 @@ li:nth-of-type(3) .social-networks {
   text-align: left;
 }
 
+.about-hotel:nth-of-type(2) {
+  margin-top: 17px;
+}
+
+.about-hotel:nth-of-type(3) {
+  margin-top: 13px;
+}
+
 .star-4 {
   position: absolute;
   background: url("../img/star-4.svg") no-repeat;
@@ -975,16 +1074,32 @@ li:nth-of-type(3) .social-networks {
 
 
 .hotel-photo {
-  margin-left: 71px;
+  margin-left: 73px;
   margin-right: 29px;
-  margin-top: 30px;
+  margin-top: 32px;
   width: 135px;
   height: 90px;
 }
 
 .hotel-info p {
   display: inline-block;
-  margin-right: 40px;
+  margin-right: 35px;
+  margin-top: 10px;
+  margin-bottom: 18px;
+}
+
+.about-hotel:nth-of-type(2) .hotel-info p {
+  display: inline-block;
+  margin-right: 60px;
+  margin-top: 7px;
+  margin-bottom: 18px;
+}
+
+.about-hotel:nth-of-type(3) .hotel-info p {
+  display: inline-block;
+  margin-right: 18px;
+  margin-top: 7px;
+  margin-bottom: 18px;
 }
 
 .result h3 a {
@@ -1012,7 +1127,7 @@ li:nth-of-type(3) .social-networks {
   margin-top: 96px;
   margin-right: 73px;
   background-color: var(--basik-white-deep);
-  padding: 2px 5px 2px 5px;
+  padding: 3px 12px 3px 15px;
   color: var(--basik-rating);
 }
 
@@ -1029,6 +1144,7 @@ li:nth-of-type(3) .social-networks {
   background-color: var(--basik-blue);
   border: none;
   box-sizing: border-box;
+  margin-right: 3px;
 }
 
 .about:hover {
@@ -1048,7 +1164,7 @@ li:nth-of-type(3) .social-networks {
   height: 27px;
   background-color: var(--basik-brown);
   border: none;
-  padding: 3px 16px 3px 17px;
+  padding: 3px 17px 3px 16px;
   box-sizing: border-box;
 }
 
