@@ -186,7 +186,7 @@ input[type="radio"].visually-hidden {
 
 .welcome::after {
   content: '';
-  background: url("../img/shape.svg") no-repeat;
+  background: url("../img/Shape.svg") no-repeat;
   width: 1201px;
   height: 57px;
   position: absolute;
