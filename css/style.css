@@ -943,21 +943,23 @@ li:nth-of-type(3) .social-networks {
   margin-left: 44px;
 }
 
-.checkbox-on::before {
-  position: absolute;
-  content: '';
-  background-image: url('../img/checkbox-on-1.svg');
-  background-repeat: no-repeat;
-  width: 27px;
-  height: 23px;
-  left: -40px;
-}
-
-.checkbox-on::before:disabled {
+.checkbox-filter:checked:disabled + label::before {
   background-image: url('../img/checkbox-on-2.svg');
 }
 
-.checkbox-off::before {
+.checkbox-filter:disabled + label::before {
+  background-image: url('../img/checkbox-off-2.svg');
+}
+
+.checkbox-filter:focus {
+  outline: none;
+}
+
+.checkbox-filter:focus + label::before {
+  outline: 1px solid var(--basik-blue);
+}
+
+.checkbox::before {
   position: absolute;
   content: '';
   background-image: url('../img/checkbox-off-1.svg');
