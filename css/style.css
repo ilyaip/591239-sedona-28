@@ -1186,11 +1186,13 @@ li:nth-of-type(3) .social-networks {
 
 .sort-label:active {
   color: var(--basik-black);
+  border: none;
   opacity: 1;
 }
 
 .actived {
   color: var(--basik-blue);
+  border: none;
   opacity: 1;
 }
 
