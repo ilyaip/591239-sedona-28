@@ -1129,7 +1129,8 @@ li:nth-of-type(3) .social-networks {
   outline: none;
 }
 
-.search-hotel:hover {
+.search-hotel:hover,
+.search-hotel:focus {
   background-color: var(--basik-white);
   color: var(--basik-black);
 }
