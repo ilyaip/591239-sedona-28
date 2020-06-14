@@ -5,11 +5,26 @@ let checkIn = modal.querySelector(".input-check-in");
 let checkOut = modal.querySelector(".input-check-out");
 let people = modal.querySelectorAll(".check-button");
 
+var isStorageSupport = true;
+var storage = "";
+
+try {
+  storage = localStorage.getItem("parents");
+  storage = localStorage.getItem("child");
+} catch (err) {
+  isStorageSupport = false;
+}
+
+
 modalButton.addEventListener("click", function (evt) {
   evt.preventDefault();
   modal.classList.toggle("show");
   modal.classList.toggle("animation");
   checkIn.focus();
+  if (storage) {
+    people[0].value = storage;
+    people[1].value = storage;
+  }
   console.log("Нажата кнопка");
 });
 
@@ -23,10 +38,11 @@ modal.addEventListener("submit", function (evt) {
       evt.preventDefault();
       modal.classList.add("modal-error");
       console.log("no submit");
-    } else {localStorage.setItem("parents", people[0].value);
-            localStorage.setItem("child", people[1].value);
-  }
-  });
+    } else { if (isStorageSupport) {
+            localStorage.setItem("parents", people[0].value);
+            localStorage.setItem("child", people[1].value); }
+}
+});
 
   window.addEventListener("keydown", function (evt) {
     if (evt.keyCode === 27) {
