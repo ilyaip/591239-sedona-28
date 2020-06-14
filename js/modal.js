@@ -23,7 +23,9 @@ modal.addEventListener("submit", function (evt) {
       evt.preventDefault();
       modal.classList.add("modal-error");
       console.log("no submit");
-    }
+    } else {localStorage.setItem("parents", people[0].value);
+            localStorage.setItem("child", people[1].value);
+  }
   });
 
   window.addEventListener("keydown", function (evt) {

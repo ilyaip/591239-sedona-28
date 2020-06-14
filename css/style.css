@@ -408,12 +408,14 @@ input[type="radio"].visually-hidden {
 }
 
 .feature-3-4-5 {
+  position: relative;
   min-height: 256px;
   flex-grow: 1;
   padding-top: 27px;
   padding-bottom: 24px;
   box-sizing: border-box;
   background-color: var(--basik-white-dark);
+  z-index: 3;
 }
 
 .feature-3-4-5 p {
@@ -535,7 +537,6 @@ input[type="radio"].visually-hidden {
   background-image: url(../img/map.png);
   width: 1199px;
   height: 594px;
-  z-index: -3;
 }
 
 .search-form .date-check {
@@ -610,7 +611,9 @@ input[type="radio"].visually-hidden {
 }
 
 .pre-form {
+  position: relative;
   background-color: var(--basik-white);
+  z-index: 3;
 }
 
 .search-hotels {
