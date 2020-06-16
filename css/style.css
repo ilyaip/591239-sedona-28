@@ -479,7 +479,7 @@ input[type="radio"].visually-hidden {
 }
 
 .search-form {
-  display: none;
+  display: flex;
   flex-wrap: wrap;
   padding: 55px;
   padding-bottom: 10px;
@@ -489,6 +489,10 @@ input[type="radio"].visually-hidden {
   min-height: 395px;
   box-shadow: 0px 7px 15px rgba(0, 1, 1, 0.15);
   background-color: var(--basik-white);
+}
+
+.show-none {
+  display: none;
 }
 
 .show {

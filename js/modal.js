@@ -15,12 +15,14 @@ try {
   isStorageSupport = false;
 }
 
+modal.classList.add("show-none");
 
 modalButton.addEventListener("click", function (evt) {
   evt.preventDefault();
   modal.classList.toggle("show");
   modal.classList.toggle("animation");
   checkIn.focus();
+  if (modal.classList.contains("show")) {modal.classList.remove("modal-error");};
   if (storage) {
     people[0].value = storage;
     people[1].value = storage;
@@ -28,14 +30,20 @@ modalButton.addEventListener("click", function (evt) {
   console.log("Нажата кнопка");
 });
 
-//  body.addEventListener("click", function () {
-//  modal.classList.remove("show");
-//  console.log("Нажатие вне формы");
-//});
+document.addEventListener('click', function(evt) {
+    var isClickInsideModal = modal.contains(evt.target);
+    var isClickInsideModalButton = modalButton.contains(evt.target);
+    if (!isClickInsideModal && !isClickInsideModalButton) {
+      modal.classList.remove("show");
+      console.log("Нажатие вне формы");
+    }
+});
 
 modal.addEventListener("submit", function (evt) {
   if (!checkOut.value || !checkIn.value || !people[0].value || !people[1].value) {
       evt.preventDefault();
+      modal.classList.remove("modal-error");
+      modal.offsetWidth = modal.offsetWidth;
       modal.classList.add("modal-error");
       console.log("no submit");
     } else { if (isStorageSupport) {
