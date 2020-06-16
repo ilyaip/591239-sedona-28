@@ -1,6 +1,5 @@
 let modalButton = document.querySelector(".search-hotels");
 let modal = document.querySelector(".search-form");
-let body = document.querySelector(".page-body:not(.search-form):not(.search-hotels)");
 let checkIn = modal.querySelector(".input-check-in");
 let checkOut = modal.querySelector(".input-check-out");
 let people = modal.querySelectorAll(".check-button");
