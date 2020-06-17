@@ -215,7 +215,7 @@ input[type="radio"].visually-hidden {
 
 /* feature */
 
-.feature {
+.bg {
   background-color: var(--basik-white);
 }
 
@@ -294,6 +294,7 @@ input[type="radio"].visually-hidden {
 
 .feature-column {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   width: 100%;
   min-height: 330px;
@@ -552,6 +553,12 @@ input[type="radio"].visually-hidden {
   height: 594px;
 }
 
+.go-map {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
 .search-form .date-check {
   width: 100%;
   margin-bottom: -13px;
@@ -593,6 +600,7 @@ input[type="radio"].visually-hidden {
   font-size: 14px;
   line-height: 26px;
   font-weight: 700;
+  text-transform: uppercase;
   color: var(--basik-black);
   opacity: 1;
 }
@@ -916,9 +924,10 @@ li:nth-of-type(3) .social-networks {
 
 .hotels-filter {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: flex-start;
-  height: 217px;
+  min-height: 217px;
   box-sizing: border-box;
   padding-top: 27px;
 }
@@ -937,6 +946,8 @@ li:nth-of-type(3) .social-networks {
   flex-grow: 1;
   border: none;
   text-align: left;
+  padding-bottom: 20px;
+  box-sizing: border-box;
 }
 
 .filter-1 {
@@ -1079,6 +1090,11 @@ li:nth-of-type(3) .social-networks {
   outline: none;
 }
 
+.sum label:nth-of-type(1) input {
+  text-align: left;
+  margin-left: 2px;
+}
+
 .stick {
   background: var(--basik-white);
   position: absolute;
@@ -1214,9 +1230,10 @@ li:nth-of-type(3) .social-networks {
 
 .filter-section {
   background: url("../img/filter.png") no-repeat;
+  background-size: cover;
   background-color: var(--basik-blue);
   width: 1200px;
-  height: 217px;
+  min-height: 217px;
 }
 
 .searched {

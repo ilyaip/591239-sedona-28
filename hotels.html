@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
-  <body class="page-body">
+  <body class="page-body bg">
     <div class="wrapper container">
       <header class="main-header">
         <nav class="main-navigation">
@@ -22,7 +22,7 @@
           </a>
         </nav>
       </header>
-      <main>
+      <main class="bg">
         <h1 class="visually-hidden">Поиск отеля</h1>
         <section class="filter-section">
           <form class="hotels-filter container" action="http://echo.htmlacademy.ru/" method="post">
@@ -30,15 +30,15 @@
               <legend class="label-filter">Инфраструктура:</legend>
               <ul class="style-none">
                 <li>
-                 <input class="checkbox-filter visually-hidden" type="checkbox" name="sweembox" value="sweembow" id="check-sweem" checked>
+                 <input class="checkbox-filter visually-hidden" type="checkbox" name="infrastructure" value="sweembow" id="check-sweem" checked>
                  <label class="filter-text checkbox" for="check-sweem">Бассейн</label>
                 </li>
                 <li>
-                  <input class="checkbox-filter visually-hidden" type="checkbox" name="parking" value="parking" id="check-parking">
+                  <input class="checkbox-filter visually-hidden" type="checkbox" name="infrastructure" value="parking" id="check-parking">
                   <label class="filter-text checkbox" for="check-parking">Парковка</label>
                 </li>
                 <li>
-                  <input class="checkbox-filter visually-hidden" type="checkbox" name="wifi" value="wifi" id="check-wifi">
+                  <input class="checkbox-filter visually-hidden" type="checkbox" name="infrastructure" value="wifi" id="check-wifi">
                   <label class="filter-text checkbox" for="check-wifi">wi-fi</label>
                 </li>
               </ul>
@@ -47,15 +47,15 @@
               <legend class="label-filter">Тип жилья:</legend>
               <ul class="style-none">
                 <li>
-                  <input class="checkbox-filter visually-hidden" type="checkbox" id="check-hotel" name="hotel" value="hotel" checked>
+                  <input class="checkbox-filter visually-hidden" type="checkbox" id="check-hotel" name="type of housing" value="hotel" checked>
                   <label class="filter-text checkbox" for="check-hotel">Гостиница</label>
                 </li>
                 <li>
-                  <input class="checkbox-filter visually-hidden" type="checkbox" id="check-mot" name="motel" value="motel" checked>
+                  <input class="checkbox-filter visually-hidden" type="checkbox" id="check-mot" name="type of housing" value="motel" checked>
                   <label class="filter-text checkbox" for="check-mot">Мотель</label>
                 </li>
                 <li>
-                  <input class="checkbox-filter visually-hidden" type="checkbox" id="check-appart" name="appart" value="appart" checked>
+                  <input class="checkbox-filter visually-hidden" type="checkbox" id="check-appart" name="type of housing" value="appart" checked>
                   <label class="filter-text checkbox" for="check-appart">Апартаменты</label>
                 </li>
               </ul>
