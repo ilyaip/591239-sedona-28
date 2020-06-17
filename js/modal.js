@@ -51,12 +51,12 @@ modal.addEventListener("submit", function (evt) {
 }
 });
 
-  window.addEventListener("keydown", function (evt) {
-    if (evt.keyCode === 27) {
-      if (modal.classList.contains("show")) {
-        evt.preventDefault();
-        modal.classList.remove("show");
-        modal.classList.remove("modal-error");
-      }
+window.addEventListener("keydown", function (evt) {
+  if (evt.keyCode === 27) {
+    if (modal.classList.contains("show")) {
+      evt.preventDefault();
+      modal.classList.remove("show");
+      modal.classList.remove("modal-error");
     }
-  });
+  }
+});
