@@ -951,12 +951,10 @@ li:nth-of-type(3) .social-networks {
 }
 
 .filter-1 {
-  box-sizing: border-box;
   margin-left: 71px;
 }
 
 .filter-2 {
-  box-sizing: border-box;
   margin-left: 44px;
   flex-shrink: 0;
 }
@@ -965,7 +963,6 @@ li:nth-of-type(3) .social-networks {
   margin-top: 0px;
   margin-left: 273px;
   width: 317px;
-  height: 217px;
 }
 
 .filter-3 .label-filter {
