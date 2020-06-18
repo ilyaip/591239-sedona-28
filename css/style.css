@@ -1280,10 +1280,6 @@ li:nth-of-type(3) .social-networks {
   left: -40px;
 }
 
-.checkbox-off::before:disabled {
-  background-image: url('../img/checkbox-off-2.svg');
-}
-
 .checkbox-filter:checked + label::before {
   position: absolute;
   content: '';
