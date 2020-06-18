@@ -19,6 +19,8 @@
   --basik-rating: #666666;
   --basik-border: #E5E5E5;
   --basik-bg-footer: rgba(255, 255, 255, 0.9);
+  --basik-shadow-wrapper: rgba(0, 1, 1, 0.2);
+  --basik-search-form: rgba(0, 1, 1, 0.15);
 }
 
 .page {
@@ -70,8 +72,8 @@ img {
 
 .wrapper {
   position: relative;
-  -webkit-box-shadow: 0px 5px 15px rgba(0, 1, 1, 0.2);
-          box-shadow: 0px 5px 15px rgba(0, 1, 1, 0.2);
+  -webkit-box-shadow: 0px 5px 15px var(--basik-shadow-wrapper);
+          box-shadow: 0px 5px 15px var(--basik-shadow-wrapper);
 }
 
 .visually-hidden:not(:focus):not(:active),
@@ -290,7 +292,7 @@ input[type="radio"].visually-hidden {
 }
 
 .feature-2 .feature-main-label {
-  width: 152px;
+  width: 151px;
   margin: 0 auto;
   margin-top: 50px;
 }
@@ -465,6 +467,10 @@ input[type="radio"].visually-hidden {
           align-items: center;
 }
 
+.feature-3-4-5 .feature-5-text {
+  width: 250px;
+}
+
 .feature-number + p {
   margin-top: 23px;
 }
@@ -516,12 +522,18 @@ input[type="radio"].visually-hidden {
   margin-bottom: 33px;
 }
 
-.form-question + p {
+.form-question-p {
   color: var(--basik-light-black);
   width: 435px;
-  margin: auto;
-  margin-bottom: 45px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0;
   line-height: 24px;
+}
+
+.form-question-p:last-of-type {
+  margin-top: 0;
+  margin-bottom: 45px;
 }
 
 .search-form {
@@ -538,8 +550,8 @@ input[type="radio"].visually-hidden {
           box-sizing: border-box;
   width: 568px;
   min-height: 395px;
-  -webkit-box-shadow: 0px 7px 15px rgba(0, 1, 1, 0.15);
-          box-shadow: 0px 7px 15px rgba(0, 1, 1, 0.15);
+  -webkit-box-shadow: 0px 7px 15px var(--basik-search-form);
+          box-shadow: 0px 7px 15px var(--basik-search-form);
   background-color: var(--basik-white);
   z-index: 5;
   top: 0;
@@ -964,7 +976,7 @@ input[type="radio"].visually-hidden {
           box-sizing: border-box;
 }
 
-.less-more div:nth-of-type(2) button:nth-of-type(2) {
+.less-more .button-more {
   margin-right: 0px;
 }
 
@@ -1355,7 +1367,7 @@ li:nth-of-type(3) .social-networks {
 
 .range-controls .scale {
   height: 2px;
-  background: rgba(255, 255, 255, 0.3);
+  background: var(--basik-white-rgba);
 }
 
 .range-controls .bar {
@@ -1633,7 +1645,7 @@ li:nth-of-type(3) .social-networks {
   vertical-align: middle;
 }
 
-.about-hotel:nth-of-type(2) .hotel-info p {
+.about-hotel:nth-of-type(2) .hotel-info-2 {
   display: inline-block;
   margin-right: 60px;
   margin-top: 7px;
@@ -1641,7 +1653,7 @@ li:nth-of-type(3) .social-networks {
   vertical-align: middle;
 }
 
-.about-hotel:nth-of-type(3) .hotel-info p {
+.about-hotel:nth-of-type(3) .hotel-info-3 {
   display: inline-block;
   margin-right: 18px;
   margin-top: 7px;
@@ -1649,18 +1661,18 @@ li:nth-of-type(3) .social-networks {
   vertical-align: middle;
 }
 
-.result h3 a {
+.result .hotel-name {
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
   color: var(--basik-black);
 }
 
-.result h3 a:hover {
+.result .hotel-name:hover {
   color: var(--basik-blue);
 }
 
-.result h3 a:active {
+.result .hotel-name:active {
   opacity: 0.3;
 }
 
